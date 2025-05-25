@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza's Mua - Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div style="
+  background-color: #dda0dd;
+  color: #4b006e;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2em;
+  animation: scroll-marquee 10s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+">
+  ¡Bienvenidos a Pizza's Mua! ¡Las mejores pizzas con el mejor sabor!
+</div>
+
+<style>
+@keyframes scroll-marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+    <header>
+        <h1><img src="images/img1.jpg" alt="Logo" style="width:50px; vertical-align:middle;"> Pizza's Mua</h1>
+        ¡la mejor pizza a tu alcance! 
+        <div><br>
+        </div>
+<nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="acerca.html">Acerca de Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+    </nav>
+    </header>
+    <main>
+      <h2>Contacto</h2>
+      <form action="https://formsubmit.co/pizzasmua@gmail.com" method="POST">
+     <input type="email" name="email" placeholder="correo" required>
+		  <textarea name="name" cols="30" rows="10" placeholder="ingrese su mensaje"></textarea>
+		  <input type="hidden" name="_captcha" value="false">
+     <button type="submit">enviar</button>
+</form>
+
+    </main>
+      <footer style="background-color: #4b006e; color: white; text-align: center; padding: 20px; margin-top: 30px;">
+  <p id="visit-counter">Visitas: </p>
+  <p>Síguenos en redes:</p>
+  <div style="font-size: 1.5em; margin-top: 10px;">
+    <a href="https://www.facebook.com/share/1FAxSawQPR/" target="_blank" style="color: white; margin: 0 10px;">Facebook</a>
+    <a href="https://www.instagram.com/pizzasmua?igsh=N2k2d3N3cGRkMjdh" target="_blank" style="color: white; margin: 0 10px;">Instagram</a>
+    <a href="https://youtube.com/@pizzasmua?si=8jrWvwGxh5B-K-tP" target="_blank" style="color: white; margin: 0 10px;">youtube</a>
+  </div>
+</footer>
+    <script src="js/script.js"></script>
+	<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    let email = document.querySelector('input[name="email"]').value;
+    let errorDiv = document.getElementById("error");
+    errorDiv.textContent = "";
+
+    if (!email.includes("@") || !email.includes(".")) {
+      e.preventDefault();
+      errorDiv.textContent = "Por favor, introduce un correo válido.";
+    }
+  });
+</script>
+</body>
+</html>
