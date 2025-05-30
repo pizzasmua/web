@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza's Mua - Servicios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+	<div class="marquesina">¡Hoy lunes de 2x1 en pizzas grandes! ¡Haz tu pedido ahora!</div>
+
+<style>
+.marquesina {
+  background-color: #ce93d8; /* fondo morado claro */
+  color: #4a148c; /* texto morado oscuro */
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: scroll 12s linear infinite;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+<body>
+    <header>
+          <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Sitio Web</title>
+  <style>
+    .logo-circular {
+      width: 150px;           /* Tamaño del logo */
+      height: 150px;
+      border-radius: 50%;     /* Hace que la imagen sea perfectamente circular */
+      object-fit: cover;      /* Asegura que la imagen llene el espacio sin deformarse */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: block;
+      margin: 40px auto;      /* Centra la imagen */
+    }
+  </style>
+</head>
+<body>
+
+  <img src="images/img1.jpg" alt="Logo Circular" class="logo-circular">
+
+</body>
+</html>  <h1> Pizza's Mua</h1>
+        <p>¡la mejor pizza a tu alcance!&nbsp;&nbsp;</p>
+<nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="acerca.html">Acerca de Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+    </nav>
+    </header>
+    <main>
+      <h2>Servicios</h2>
+		<section class="galeria-lila">
+  <div class="item">
+    <img src="images/img4.jpg" alt="imagen 1" onclick="abrirLightbox(this)">
+    <p>$20.00</p>
+  </div>
+  <div class="item">
+    <img src="images/img6.jpg" alt="imagen 2" onclick="abrirLightbox(this)">
+    <p>$20.00</p>
+  </div>
+  <div class="item">
+    <img src="images/img11.jpg" alt="imagen 3" onclick="abrirLightbox(this)">
+    <p>$20.00</p>
+  </div>
+  <div class="item">
+    <img src="images/img26.jpg" alt="imagen 4" onclick="abrirLightbox(this)">
+    <p>$20.00</p>
+  </div>
+  <div class="item">
+    <img src="images/img27.jpg" alt="imagen 5" onclick="abrirLightbox(this)">
+    <p>$20.00</p>
+  </div>
+</section>
+
+<div id="lightbox" onclick="cerrarLightbox()">
+  <img id="imagenGrande" src="" alt="">
+</div>
+
+<style>
+.galeria-lila {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 1em;
+  background-color: #f5e6fa;
+}
+
+.item {
+  text-align: center;
+  color: #4b006e;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #dda0dd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ba55d3;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+</style>
+
+<script>
+function abrirLightbox(img) {
+  const lightbox = document.getElementById('lightbox');
+  const imagenGrande = document.getElementById('imagenGrande');
+  imagenGrande.src = img.src;
+  imagenGrande.alt = img.alt;
+  lightbox.style.display = 'flex';
+}
+
+function cerrarLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+		<section class="galeria-lila">
+  <div class="item">
+    <img src="images/img15.jpg" alt="imagen 5" onclick="abrirLightbox(this)">
+    <p>Pizza Margarita</p>
+    <p>$50.00&nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img16.jpg" alt="imagen 1" onclick="abrirLightbox(this)">
+    <p>Pizza setas</p>
+    <p>$50.00 &nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img17.jpg" alt="imagen 2" onclick="abrirLightbox(this)">
+    <p>Pizza salchicha</p>
+    <p>$50.00 &nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img18.jpg" alt="imagen 3" onclick="abrirLightbox(this)">
+    <p>Pizza aceitunas</p>
+    <p>$50.00 &nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img19.jpg" alt="imagen 4" onclick="abrirLightbox(this)">
+    <p>Pizza Cuatro Quesos</p>
+    <p>$50.00 &nbsp;</p>
+  </div>
+</section>
+
+<div id="lightbox" onclick="cerrarLightbox()">
+  <img id="imagenGrande" src="" alt="">
+</div>
+
+<style>
+.galeria-lila {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 1em;
+  background-color: #f5e6fa;
+}
+
+.item {
+  text-align: center;
+  color: #4b006e;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #dda0dd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ba55d3;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+</style>
+
+<script>
+function abrirLightbox(img) {
+  const lightbox = document.getElementById('lightbox');
+  const imagenGrande = document.getElementById('imagenGrande');
+  imagenGrande.src = img.src;
+  imagenGrande.alt = img.alt;
+  lightbox.style.display = 'flex';
+}
+
+function cerrarLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+		<section class="galeria-lila">
+  <div class="item">
+    <img src="images/img2.jpg" alt="imagen 2" onclick="abrirLightbox(this)">
+    <p>Pizza chorizo</p>
+    <p>$70.00&nbsp;</p>
+  </div>
+  <div class="item">
+   <img src="images/img3.jpg" alt="imagen 3"onclick="abrirLightbox(this)">
+    <p>Pizza albaca</p>
+    <p>$70.00&nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img12.jpg" alt="imagen 2" onclick="abrirLightbox(this)">
+    <p>Pizza setas y aceitunas</p>
+    <p>$70.00&nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img13.jpg" alt="imagen 3" onclick="abrirLightbox(this)">
+    <p>Pizza triple queso y albaca</p>
+    <p>$70.00&nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img14.jpg" alt="imagen 4" onclick="abrirLightbox(this)">
+    <p>Pizza albaca simple</p>
+    <p>$70.00&nbsp;</p>
+  </div>
+</section>
+
+<div id="lightbox" onclick="cerrarLightbox()">
+  <img id="imagenGrande" src="" alt="">
+</div>
+
+<style>
+.galeria-lila {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 1em;
+  background-color: #f5e6fa;
+}
+
+.item {
+  text-align: center;
+  color: #4b006e;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #dda0dd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ba55d3;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+</style>
+
+<script>
+function abrirLightbox(img) {
+  const lightbox = document.getElementById('lightbox');
+  const imagenGrande = document.getElementById('imagenGrande');
+  imagenGrande.src = img.src;
+  imagenGrande.alt = img.alt;
+  lightbox.style.display = 'flex';
+}
+
+function cerrarLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+        <div class="gallery">
+      
+        </div>
+    </main>
+	<section class="galeria-lila">
+  <div class="item">
+    <img src="images/img25.jpg" alt="imagen 5" onclick="abrirLightbox(this)">
+    <p>Pizza carne</p>
+    <p>$95.00&nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img21.jpg" alt="imagen 1" onclick="abrirLightbox(this)">
+    <p>Pizza especial</p>
+    <p>$95.00 &nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img24.jpg" alt="imagen 4" onclick="abrirLightbox(this)">
+    <p>Pizza Vegetariana</p>
+    <p>$95.00 &nbsp;</p>
+  </div>
+  <div class="item">
+    <img src="images/img23.jpg" alt="imagen 3" onclick="abrirLightbox(this)">
+    <p>Pizza peperoni</p>
+    <p>$95.00 &nbsp;</p>
+  </div>
+  <div class="item">
+     <img src="images/img22.jpg" alt="imagen 2" onclick="abrirLightbox(this)">
+    <p>Pizza verde</p>
+     <p>$95.00 &nbsp;</p>
+  </div>
+</section>
+
+<div id="lightbox" onclick="cerrarLightbox()">
+  <img id="imagenGrande" src="" alt="">
+</div>
+
+<style>
+.galeria-lila {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 1em;
+  background-color: #f5e6fa;
+}
+
+.item {
+  text-align: center;
+  color: #4b006e;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #dda0dd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ba55d3;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+</style>
+
+<script>
+function abrirLightbox(img) {
+  const lightbox = document.getElementById('lightbox');
+  const imagenGrande = document.getElementById('imagenGrande');
+  imagenGrande.src = img.src;
+  imagenGrande.alt = img.alt;
+  lightbox.style.display = 'flex';
+}
+
+function cerrarLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+   <footer style="background-color: #4b006e; color: white; text-align: center; padding: 20px; margin-top: 30px;">
+  <p id="visit-counter">Visitas: </p>
+  <p>Síguenos en redes:</p>
+  <div style="font-size: 1.5em; margin-top: 10px;">
+    <a href="https://www.facebook.com/share/1FAxSawQPR/" target="_blank" style="color: white; margin: 0 10px;">Facebook</a>
+    <a href="https://www.instagram.com/pizzasmua?igsh=N2k2d3N3cGRkMjdh" target="_blank" style="color: white; margin: 0 10px;">Instagram</a>
+    <a href="https://youtube.com/@pizzasmua?si=8jrWvwGxh5B-K-tP" target="_blank" style="color: white; margin: 0 10px;">youtube</a>
+  </div>
+</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
